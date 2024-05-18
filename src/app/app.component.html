@@ -1,0 +1,16 @@
+<div class="container">
+  <app-card 
+    [image]="card1.image" 
+    [title]="card1.title" 
+    [description]="card1.description" 
+    [backgroundColor]="getThemeColor()">
+  </app-card>
+  
+  <app-card 
+    [image]="card2.image" 
+    [title]="card2.title" 
+    [description]="card2.description" 
+    [backgroundColor]="getThemeColor()">
+  </app-card>
+</div>
+<app-theme-switch [(theme)]="theme"></app-theme-switch>
